@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>todoアプリカスタマイズ</title>
+</head>
+<body>
+  <div id="app">
+    <vuejs-datepicker 
+        v-model="defaultDate"
+        :format="DatePickerFormat"
+        :language="language"
+        :inline="true"              
+        name="datepicker"
+        id="input-id"
+        input-class="input-class"           
+        ></vuejs-datepicker>
+    <p>{{customformat(defaultDate)}}</p>
+  </div>  
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+  <script src="https://unpkg.com/vuejs-datepicker"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/vuejs-datepicker@1.6.2/dist/locale/translations/ja.js"></script> -->
+  <script src="https://momentjs.com/downloads/moment.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
